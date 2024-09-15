@@ -75,34 +75,6 @@ The structure consists of the following key elements:
 - **multiValued**: A Boolean attribute (e.g., `true` or `false`) indicating whether a facet can have multiple values.
 - **linkedFacet**: Indicates a relationship with another facet.
 
-## Example XML Snippet
-
-```xml
-<taxonomy name="error" version="1.0">
-  <facet id="MF" name="MorphologicalFeature">
-    <subfacets>
-      <subfacet id="POS" name="PartOfSpeech" dependency="UDv2">
-        <value id="ADJ" name="adjective" />
-        <value id="ADV" name="adverb" />
-      </subfacet>
-      <subfacet id="IF" name="InflectionalFeature" dependency="UDv2">
-        <value id="ANI" name="animacy" />
-        <value id="ASP" name="aspect" />
-      </subfacet>
-    </subfacets>
-  </facet>
-</taxonomy>
-
-
-
-
-
-
-
-
-
-
-
 ## How to Contribute
 
 We welcome contributions from everyone! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started. 
