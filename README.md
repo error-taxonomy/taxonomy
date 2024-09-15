@@ -14,6 +14,94 @@ This project is based on the article [Error Annotation: A Review and Faceted Tax
 
 We believe that this project as being based on the principles of universality and diversity will address the emerging need for a common framework in error annotation.
 
+# Taxonomy XML Structure Reference
+
+This document serves as a guide to understanding the XML-based taxonomy structure in taxonomy.xml file. It outlines the primary elements, attributes, and their purpose within the XML schema.
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Taxonomy Structure](#taxonomy-structure)
+3. [Key Attributes](#key-attributes)
+
+---
+
+## Overview
+
+This taxonomy organizes different categories and subcategories to describe various linguistic features. It is structured hierarchically, where each facet may contain subfacets or values, and each value represents a distinct feature.
+
+XML defines facets (high-level categories) and subfacets (subcategories within facets), each with unique identifiers and names.
+
+## Taxonomy Structure
+
+The structure consists of the following key elements:
+
+### `<taxonomy>`
+- **Attributes**:
+  - `name`: A string representing the name of the taxonomy.
+  - `version`: The version of the taxonomy (e.g., "1.0").
+
+### `<facet>`
+- Represents a high-level category in the taxonomy.
+- **Attributes**:
+  - `id`: A unique identifier for the facet (e.g., "ID", "MF", "UNI").
+  - `name`: The human-readable name of the facet (e.g., "Identifier", "MorphologicalFeature").
+  - `dependency` (optional): Describes whether the facet is dependent on an external system (e.g., "UDv2", "ISO639-3").
+  - `multiValued` (optional): Indicates if a facet can have multiple values (e.g., `true` or `false`).
+
+### `<subfacet>`
+- Subcategories within a facet.
+- **Attributes**:
+  - `id`: A unique identifier for the subfacet (e.g., "POS", "IF", "LF").
+  - `name`: The human-readable name of the subfacet (e.g., "PartOfSpeech", "InflectionalFeature").
+  - `dependency` (optional): Describes whether the subfacet is dependent on an external system (e.g., "UDv2").
+  - `allValuesFromDependencyAccepted` (optional): If `true`, it indicates that all values from the dependent system are valid.
+
+### `<value>`
+- Represents a specific value or feature within a facet or subfacet.
+- **Attributes**:
+  - `id`: A unique identifier for the value (e.g., "ADJ", "ADV").
+  - `name`: The human-readable name of the value (e.g., "adjective", "adverb").
+  - `linkedFacet` (optional): Links this value to another facet, indicating a relationship between them.
+
+### `<subfacets>`
+- A container for subfacets within a facet.
+
+## Key Attributes
+
+- **id**: A short string used as a unique identifier for facets, subfacets, and values.
+- **name**: The descriptive name of the facet, subfacet, or value.
+- **dependency**: Describes any external system that this element is related to (e.g., "UDv2", "ISO639-3").
+- **multiValued**: A Boolean attribute (e.g., `true` or `false`) indicating whether a facet can have multiple values.
+- **linkedFacet**: Indicates a relationship with another facet.
+
+## Example XML Snippet
+
+```xml
+<taxonomy name="error" version="1.0">
+  <facet id="MF" name="MorphologicalFeature">
+    <subfacets>
+      <subfacet id="POS" name="PartOfSpeech" dependency="UDv2">
+        <value id="ADJ" name="adjective" />
+        <value id="ADV" name="adverb" />
+      </subfacet>
+      <subfacet id="IF" name="InflectionalFeature" dependency="UDv2">
+        <value id="ANI" name="animacy" />
+        <value id="ASP" name="aspect" />
+      </subfacet>
+    </subfacets>
+  </facet>
+</taxonomy>
+
+
+
+
+
+
+
+
+
+
 
 ## How to Contribute
 
