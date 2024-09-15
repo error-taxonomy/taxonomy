@@ -14,11 +14,6 @@ This project is based on the article [Error Annotation: A Review and Faceted Tax
 
 We believe that this project as being based on the principles of universality and diversity will address the emerging need for a common framework in error annotation.
 
-## Project Structure
-
-- **`taxonomy/`**: Contains the taxonomy files in JSON and XML formats.
-- **`examples/`**: Example files showing how to use the taxonomy.
-- **`docs/`**: Documentation and guidelines on how to contribute.
 
 ## How to Contribute
 
@@ -28,7 +23,7 @@ We welcome contributions from everyone! Please read our [CONTRIBUTING.md](CONTRI
 
 1. Fork the repository.
 2. Create your feature branch (`git checkout -b feature/YourFeature`).
-3. Make your changes in the taxonomy files.
+3. Make your changes in the taxonomy.xml.
 4. Commit your changes (`git commit -m 'Add YourFeature'`).
 5. Push to your branch (`git push origin feature/YourFeature`).
 6. Open a Pull Request.
@@ -39,4 +34,4 @@ This project is licensed under the GNU License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-If you have any questions or suggestions, feel free to open an issue or reach out to us at [your-email@example.com].
+If you have any questions or suggestions, feel free to open an issue or reach out to us at [faceted-error-taxonomy@outlook.com].
