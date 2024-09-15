@@ -99,6 +99,7 @@
         <value id="NNS" name="nonNativeSpeaker" linkedFacet="DF" />
         <value id="TOO" name="tool" linkedFacet="T" />
       </subfacet>
+      <!-- This facet is problematic because, it may be called something else instead of facet!!! -->
       <subfacet id="DF" name="DemographicFeature">
         <value id="AGE" name="age" />
         <value id="EL" name="educationLevel" />
