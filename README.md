@@ -5,11 +5,13 @@
 [![Contributors](https://img.shields.io/github/contributors/username/faceted-taxonomy-project)](https://github.com/username/faceted-taxonomy-project/graphs/contributors)
 -->
 
-Welcome to the Faceted Error Taxonomy project! This project aims to build and maintain a comprehensive faceted error taxonomy for errors in language use which can be used to utilize to create both fine- and coarse-grained error annotation schemes depending on specific requirements.
+Welcome to Faceted Error Taxonomy project! This project aims to build and maintain a faceted error taxonomy for errors in language use. It can be used to utilize creating both fine- and coarse-grained error annotation schemes depending on specific requirements.
 
 Classification of errors in language use plays a crucial role in language learning \& teaching, error analysis studies, and language technology development.
 However, there is no standard and inclusive error classification method agreed upon among different disciplines, which causes repetition of similar efforts and a barrier in front of a common understanding in the field.
-This project is based on the article (!!citation here!!) that brings a new and holistic perspective to error classifications and annotation schemes across different fields (i.e., learner corpora research, error analysis, grammar error correction, and machine translation), all serving the same purpose but employing different methods and approaches.
+
+This project is based on the article [Error Annotation: A Review and Faceted Taxonomy](https://github.com/error-taxonomy/) which brings a new and holistic perspective to error classifications and annotation schemes across different fields (i.e., learner corpora research, error analysis, grammar error correction, and machine translation), all serving the same purpose but employing different methods and approaches.
+
 We believe that this project as being based on the principles of universality and diversity will address the emerging need for a common framework in error annotation.
 
 ## Project Structure
